@@ -22,6 +22,7 @@ const CustomMenu = ({ item }) => {
         // aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
         onMouseOver={handleClick}
+        sx={{color:"#fff"}}
       >
         {item.title}
       </Button>

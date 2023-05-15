@@ -1,13 +1,30 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../../components/header/header.component";
+import { styled, Box } from "@mui/material";
+
+const MainPage = styled(Box)(() => ({
+  widtg: "100vw",
+  height: "100vh",
+  display: "flex",
+  flexDirection: "column",
+}));
+
+const OutletPage = styled(Box)(() => ({
+  width: "100%",
+  flex: 1,
+//   backgroundColor: "red",
+  overflow: "auto",
+}));
 
 const MainLayout = () => {
   return (
-    <div>
+    <MainPage>
       <Header />
-      <Outlet />
-    </div>
+      <OutletPage>
+        <Outlet />
+      </OutletPage>
+    </MainPage>
   );
 };
 

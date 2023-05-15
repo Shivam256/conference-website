@@ -7,19 +7,28 @@ export const HeaderContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  alignItems: "center",
 }));
 
 export const MainHeader = styled(Box)(() => ({
-  width: "100%",
+  width: "90%",
   height: "fit-content",
-  padding: "10px",
+  padding: "30px 10px",
   display: "flex",
   flexDirection: "row",
+  alignItems: "center",
+  gap: "50px",
 }));
 
 export const HeaderMenu = styled(Box)(() => ({
   width: "100%",
   height: "50px",
-  backgroundColor: "yellow",
+  backgroundColor: "#1956a0",
   display: "flex",
+  justifyContent: "center",
+  gap:'20px',
+  "& a": {
+    color: "#fff",
+    textDecoration: "none",
+  },
 }));
