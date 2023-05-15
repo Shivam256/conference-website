@@ -31,7 +31,7 @@ const Footer = () => {
           alignItems: 'flex-start',
           flexDirection: 'column',
           width: '30%',
-          height: '100%',
+          height: '350px',
         }}
       >
         <Typography sx={{ fontWeight: 'bold', fontSize: '1.2rem' }}>

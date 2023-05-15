@@ -15,17 +15,19 @@ const OutletPage = styled(Box)(() => ({
   width: '100%',
   flex: 1,
   //   backgroundColor: "red",
-  overflow: 'auto',
+  overflowX: 'hidden',
 }));
 
 const MainLayout = () => {
   return (
     <MainPage>
-      <Header />
       <OutletPage>
+        <Header />
+
         <Outlet />
+
+        <Footer />
       </OutletPage>
-      <Footer />
     </MainPage>
   );
 };
